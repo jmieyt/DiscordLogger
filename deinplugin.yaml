@@ -1,0 +1,21 @@
+specVersion: 1
+type: plugin
+name: DiscordLogger
+authors:
+  - fontrendererobj
+supportedPlatforms:
+  - spigot
+  - paper
+supportedGameVersions: ^1.19
+category: misc
+introduction: Log Events easily.
+installation:
+  de: |
+    - Herunterladen der Plugin-Datei
+    - Ablegen der Datei im Plugins-Ordner
+    - Server neustarten
+  en: |
+    - Download the plugin-file
+    - Put the file into your plugins-folder
+    - Restart your server
+icon: https://prnt.sc/KoqRypS6YOJR
