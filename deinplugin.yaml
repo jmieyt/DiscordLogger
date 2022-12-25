@@ -10,8 +10,8 @@ supportedGameVersions: ^1.19
 category: misc
 introduction: Log Events easily.
 description: |
-      # Überblick
-      Dieses Plugin sendet alle in der Config einstellbaren Events an einen Webhook.
+  This Plugin logs all required Events (changeable in config) to a Webhook-Link
+      
 installation:
   de: |
     - Herunterladen der Plugin-Datei
