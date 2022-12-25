@@ -9,5 +9,7 @@
 
 ![image](https://user-images.githubusercontent.com/77451272/209478021-eae07ff3-cf2a-41b3-9e5b-b7b8c3ba4865.png)
 
+![image](https://user-images.githubusercontent.com/77451272/209478277-83551504-7541-4e45-8878-9d66b07483de.png)
+
 Found a Bug or need more Events?
  - Create a Issue here [GitHub](https://github.com/jmieyt/DiscordLogger/issues)
