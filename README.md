@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/77451272/209478182-507613b0-9975-4efc-924a-12aac9a11bba.png)
 
 - Customizeable Messages
-- Required Events (suggest more Events on the Issue Tab)
+- many Events (suggest more Events on the Issue Tab)
 - Easy to use
 
 ![image](https://user-images.githubusercontent.com/77451272/209478174-abb418e3-71d0-4c7b-8032-c733a7851ebc.png)
