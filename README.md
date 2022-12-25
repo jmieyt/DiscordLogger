@@ -1,4 +1,3 @@
-![Download](https://user-images.githubusercontent.com/77451272/209478147-55cadebd-56cf-4718-b705-1ccb5460016d.png)
 
 ![image](https://user-images.githubusercontent.com/77451272/209478182-507613b0-9975-4efc-924a-12aac9a11bba.png)
 
