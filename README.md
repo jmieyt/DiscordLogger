@@ -5,6 +5,6 @@
 - Required Events (suggest more Events on the Issue Tab)
 - Easy to use
 
-![image](https://user-images.githubusercontent.com/77451272/209478004-c0427dd8-438c-47e3-84ae-b44bb116a990.png)
+![image](https://user-images.githubusercontent.com/77451272/209478174-abb418e3-71d0-4c7b-8032-c733a7851ebc.png)
 
 ![image](https://user-images.githubusercontent.com/77451272/209478021-eae07ff3-cf2a-41b3-9e5b-b7b8c3ba4865.png)
