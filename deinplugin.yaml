@@ -13,7 +13,8 @@ introduction:
  en: Log Events easily.
 description: |
   This Plugin logs all required Events (changeable in config) to a Webhook-Link
-      
+images:
+ - https://user-images.githubusercontent.com/77451272/209478021-eae07ff3-cf2a-41b3-9e5b-b7b8c3ba4865.png
 installation:
   de: |
     - Herunterladen der Plugin-Datei
