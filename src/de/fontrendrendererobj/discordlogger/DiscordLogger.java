@@ -47,34 +47,32 @@ public class DiscordLogger extends JavaPlugin {
 		
 		getConfig().addDefault("prefix", "[DiscordLogger]");
 		getConfig().options().copyDefaults(true);
-        saveConfig();
-        
-        // Check if token is in Config File
-        if(getConfig().getString("webhook").equalsIgnoreCase("ADDWEBHOOKLINK")) {
-        	Bukkit.getConsoleSender().sendMessage("[WARNING] " + prefix + "No Discord Webhook Link in Config-File! exiting...");
-        	Bukkit.getPluginManager().disablePlugin(this);
-        	return;
-        }else {
-        	Bukkit.getConsoleSender().sendMessage(prefix + "Discord-Webhook detected!");
-        }
-        
-        // Loading Data
-        prefix = getConfig().getString("prefix");
-        Bukkit.getPluginManager().registerEvents(new BlockBreakListener(), instance);
-        Bukkit.getPluginManager().registerEvents(new BlockPlaceListener(), instance);
-        Bukkit.getPluginManager().registerEvents(new PlayerChatListener(), instance);
-        Bukkit.getPluginManager().registerEvents(new PlayerJoinListener(), instance);
-        Bukkit.getPluginManager().registerEvents(new PlayerQuitListener(), instance);
+		saveConfig();
+
+		// Check if token is in Config File
+		if(getConfig().getString("webhook").equalsIgnoreCase("ADDWEBHOOKLINK")) {
+			Bukkit.getConsoleSender().sendMessage("[WARNING] " + prefix + "No Discord Webhook Link in Config-File! exiting...");
+			Bukkit.getPluginManager().disablePlugin(this);
+			return;
+		}else {
+			Bukkit.getConsoleSender().sendMessage(prefix + "Discord-Webhook detected!");
+		}
+
+		// Loading Data
+		prefix = getConfig().getString("prefix");
+		Bukkit.getPluginManager().registerEvents(new BlockBreakListener(), instance);
+		Bukkit.getPluginManager().registerEvents(new BlockPlaceListener(), instance);
+		Bukkit.getPluginManager().registerEvents(new PlayerChatListener(), instance);
+		Bukkit.getPluginManager().registerEvents(new PlayerJoinListener(), instance);
+		Bukkit.getPluginManager().registerEvents(new PlayerQuitListener(), instance);
         
 		Bukkit.getConsoleSender().sendMessage(this.prefix + "DiscordLogger made by fontrendererobj :)");
 		Bukkit.getConsoleSender().sendMessage(this.prefix + "Bug? or you need more Events? write me on discord: fontrendererobj#6023 or create a GitHub issue.");
-		// TODO Auto-generated method stub
 		super.onEnable();
 	}
 	
 	@Override
 	public void onDisable() {
-		// TODO Auto-generated method stub
 		super.onDisable();
 	}
 	
