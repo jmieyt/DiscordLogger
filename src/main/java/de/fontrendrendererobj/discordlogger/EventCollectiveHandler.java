@@ -51,7 +51,7 @@ public final class EventCollectiveHandler {
     }
 
     private void publishWebhook(String channel, Player player, Pair... placeholders) {
-        var message = DiscordLogger.getInstance().getConfig().getString(channel).replace("%playername%", player.getName());
+        var message = channel.replace("%playername%", player.getName());
         for (var placeholder : placeholders) {
             message = message.replace("%" + placeholder.getL().toString() + "%", placeholder.getR().toString());
         }

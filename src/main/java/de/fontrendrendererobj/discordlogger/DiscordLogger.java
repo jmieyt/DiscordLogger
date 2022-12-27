@@ -5,6 +5,8 @@ import net.http.aeon.Aeon;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
+
 @Getter
 public class DiscordLogger extends JavaPlugin {
 
@@ -17,27 +19,16 @@ public class DiscordLogger extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
         instance = this;
 
-        this.discordWebhook = new DiscordWebhook(getConfig().getString("webhook"));
+        File discordLoggerDirectory = new File("plugins//DiscordLogger");
+        discordLoggerDirectory.mkdirs();
+
         this.property = Aeon.insert(new DiscordLoggerProperty());
-
-
-        getConfig().addDefault("ChatEvent", true);
-        getConfig().addDefault("ChatEvent-message", "%playername%: %message%");
-        getConfig().addDefault("webhook", "ADDWEBHOOKLINK");
-        getConfig().addDefault("webhook-tts", true);
-        getConfig().addDefault("webhook-name", "name");
-        getConfig().addDefault("webhook-content", "content");
-        getConfig().addDefault("webhook-avatarUrl", "avatarUrl");
-
-        getConfig().addDefault("prefix", "[DiscordLogger]");
-        getConfig().options().copyDefaults(true);
-        saveConfig();
+        this.discordWebhook = new DiscordWebhook(getConfig().getString("webhook"));
 
         // Check if token is in Config File
-        if (getConfig().getString("webhook").equalsIgnoreCase("ADDWEBHOOKLINK")) {
+        if (this.property.getWebhook().equalsIgnoreCase("ADDWEBHOOKLINK")) {
             Bukkit.getConsoleSender().sendMessage("[WARNING] " + prefix + "No Discord Webhook Link in Config-File! exiting...");
             Bukkit.getPluginManager().disablePlugin(this);
             return;
@@ -46,7 +37,7 @@ public class DiscordLogger extends JavaPlugin {
         }
 
         // Loading Data
-        prefix = getConfig().getString("prefix");
+        this.prefix = this.property.getPrefix();
         new EventCollectiveHandler(this.property);
 
         Bukkit.getConsoleSender().sendMessage(this.prefix + "DiscordLogger made by fontrendererobj :)");
