@@ -37,7 +37,7 @@
         <dependency>
             <groupId>com.github.HttpMarco</groupId>
             <artifactId>Aeon</artifactId>
-            <version>d3f1b916de</version>
+            <version>-67e12b5d77-1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
